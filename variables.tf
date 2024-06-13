@@ -19,13 +19,13 @@ variable "zone" {
 variable "name" {
   type           = string
   description    = "Name for this infrastructure"
-  default        = "Jitterbit"
+  default        = "jitterbit"
 }
 
 variable "ip_cidr_range" {
-  type           =list(string)
+  type           =string
   description    ="List of The range of internal addresses that are owned by this subnetwork."
-  default        =["10.16.128.0/24"]
+  default        ="10.16.128.0/24"
 }
 
 variable "vm_type" {
